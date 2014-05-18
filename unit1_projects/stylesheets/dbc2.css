@@ -1,0 +1,26 @@
+
+  .sidebar{
+    float:left;
+    width:200px;
+    background:red;
+  }
+
+  .content{
+    float:right;
+    width:200px;
+    background:black;
+  }
+
+  .footer {
+    position: absolute; 
+    bottom: 10px; 
+    left:60px; 
+    background-color: yellow;
+  }
+
+  .header {
+    position: absolute; 
+    bottom: 10px; 
+    left:60px; 
+    background-color: yellow;
+  }
