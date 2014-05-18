@@ -1,6 +1,6 @@
 
   .sidebar{
-    position: relative;
+    position: absolute;
     margin-top: 120 px;
     float:left;
     width:30%;
@@ -9,7 +9,7 @@
   }
 
   .content{
-    position: relative;
+    position: absolute;
     margin-top: 120 px;
     float:right;
     width:65%;
