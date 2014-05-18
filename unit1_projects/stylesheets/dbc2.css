@@ -19,8 +19,7 @@
 
   .footer {
     position: relative; 
-    padding-top: 120 px;
-    bottom: 10px; 
+    bottom: -10px; 
     background-color: yellow;
   }
 
