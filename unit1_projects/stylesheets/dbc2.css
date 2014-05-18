@@ -1,17 +1,17 @@
 
   .sidebar{
     position: relative;
-    top: 10 px;
+    top: 20%;
     float:left;
-    width:45%;
+    width:30%;
     background:red;
   }
 
   .content{
     position: relative;
-    top: 10 px;
+    top: 20%;
     float:right;
-    width:45%;
+    width:65%;
     background:black;
   }
 
