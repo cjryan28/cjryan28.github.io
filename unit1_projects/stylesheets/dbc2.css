@@ -1,7 +1,7 @@
 
   .sidebar{
     position: relative;
-    top: 120 px;
+    padding-top: 120 px;
     float:left;
     width:30%;
     background:red;
@@ -10,7 +10,7 @@
 
   .content{
     position: relative;
-    top: 120 px;
+    padding-top: 120 px;
     float:right;
     width:65%;
     background:black;
