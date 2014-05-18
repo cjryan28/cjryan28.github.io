@@ -3,7 +3,7 @@
     position: relative;
     top: 10 px;
     float:left;
-    width:200px;
+    width:45%;
     background:red;
   }
 
@@ -11,7 +11,7 @@
     position: relative;
     top: 10 px;
     float:right;
-    width:200px;
+    width:45%;
     background:black;
   }
 
