@@ -1,7 +1,7 @@
 
   .sidebar{
-    position: absolute;
-    margin-top: 120 px;
+    position: relative;
+    margin-top: -120 px;
     float:left;
     width:30%;
     background:red;
@@ -9,8 +9,8 @@
   }
 
   .content{
-    position: absolute;
-    margin-top: 120 px;
+    position: relative;
+    margin-top: -120 px;
     float:right;
     width:65%;
     background:black;
