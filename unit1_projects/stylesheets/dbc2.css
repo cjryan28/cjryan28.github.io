@@ -1,11 +1,15 @@
 
   .sidebar{
+    position: relative;
+    top: 10 px;
     float:left;
     width:200px;
     background:red;
   }
 
   .content{
+    position: relative;
+    top: 10 px;
     float:right;
     width:200px;
     background:black;
@@ -20,7 +24,7 @@
 
   .header {
     position: absolute; 
-    bottom: 10px; 
+    top: 10px; 
     left:60px; 
     background-color: yellow;
   }
