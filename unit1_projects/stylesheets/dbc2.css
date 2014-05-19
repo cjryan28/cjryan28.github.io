@@ -30,7 +30,11 @@
     height: 100 px;
   }
 
+  .img {
+  	position: relative;
+  }
+  
   .caption {
    	postion: absolute;
-   	top: 10 px;	
+
   }
