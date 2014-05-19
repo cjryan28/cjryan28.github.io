@@ -29,3 +29,9 @@
     width: 100%;
     height: 100 px;
   }
+
+  .caption {
+  	postion: absolute;
+  	top: 140 px;
+  	left: 45 px;
+  }
