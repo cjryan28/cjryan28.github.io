@@ -31,6 +31,6 @@
   }
 
   .caption {
-  	postion: absolute;
-  	
+   	postion: absolute;
+   	top: 10 px;	
   }
