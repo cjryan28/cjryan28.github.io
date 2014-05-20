@@ -42,11 +42,12 @@
 	border: 2px solid black;
 	margin: 0px 10px 10px 0px;
 	width: 606px;
-	height: 698px;
+	height: 699px;
 }
 
 #page_section h3{
 	padding: 5px 0px
+	text-decoration: underline;
 }
 
 #page_section p{
