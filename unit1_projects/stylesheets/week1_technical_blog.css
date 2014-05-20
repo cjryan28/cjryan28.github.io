@@ -12,12 +12,12 @@
 
 #page_header {
 	text-align: left;
-	margin: 20px;
+	margin: 20px 0px;
 	border: 3px solid black;
 }
 
 #page_nav{
-	position: absolute;
+	float: right;
 	border: 2px solid black;
 	top: 10px;
 	right: 5px;
