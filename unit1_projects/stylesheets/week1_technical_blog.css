@@ -31,5 +31,13 @@
 
 #page_nav ul li{
 	display: inline;
-	margin: px;
+	margin: 25px;
+}
+
+#section{
+	clear: right
+}
+
+#section hgroup{
+	padding: 5px 0px
 }
