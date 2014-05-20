@@ -14,12 +14,14 @@
 	text-align: left;
 	margin: 20px 0px;
 	border: 3px solid black;
+	width: 963px;
 }
 
 #page_nav{
 	float: right;
 	top: 0px;
 	border: 2px solid black;
+	width: 962px;
 }
 
 #page_nav ul{
