@@ -12,7 +12,7 @@
 
 #page_header {
 	text-align: left;
-	margin: 20px -1.5px;
+	margin: 20px 0px;
 	border: 3px solid black;
 	width: 960px;
 }
@@ -21,7 +21,7 @@
 	float: right;
 	border: 2px solid black;
 	width: 960px;
-	margin: 15px -1px;
+	margin: 0px 0px 15px 0px;
 }
 
 #page_nav ul{
