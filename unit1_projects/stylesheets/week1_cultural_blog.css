@@ -38,21 +38,22 @@
 }
 
 #page_section{
+	float: left;
 	border: 2px solid black;
+	margin: 0px 10px 10px 0px;
+	width: 606px;
 }
 
 #page_section h3{
 	padding: 15px 0px 5px 0px;
 	text-decoration: underline;
 }
-#page_section img{
-	float: left;
-}
+
 #page_section p{
 	padding: 5px 0px;
 }
 
-/*#page_aside{
+#page_aside{
 	float: right;
 	padding: 15px;
 	border: 2px solid black;
