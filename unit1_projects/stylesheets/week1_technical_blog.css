@@ -18,6 +18,7 @@
 
 #page_nav{
 	float: right;
+	top: 0px;
 	border: 2px solid black;
 	top: 10px;
 	right: 5px;
