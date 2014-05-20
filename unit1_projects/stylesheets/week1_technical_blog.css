@@ -27,12 +27,13 @@
 #page_nav ul{
 	list-style-type: none;
 
+
 }
 
 #page_nav ul li{
 	display: inline;
 	margin: 25px;
-	text-align: center
+	text-align: center;
 }
 
 #page_section{
