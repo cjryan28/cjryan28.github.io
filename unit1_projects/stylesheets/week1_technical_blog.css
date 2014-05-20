@@ -34,16 +34,16 @@
 	margin: 25px;
 }
 
-#section{
+#page_section{
 	float: left;
 	width: 640 px;
 }
 
-#section hgroup{
+#page_section hgroup{
 	padding: 5px 0px
 }
 
-#aside{
+#page_aside{
 	float: left;
 	width: 320px;
 }
