@@ -33,9 +33,14 @@
 }
 
 #section{
-	clear: right
+	clear: right;
+	float: left;
 }
 
 #section hgroup{
 	padding: 5px 0px
+}
+
+#aside{
+	float: left;
 }
