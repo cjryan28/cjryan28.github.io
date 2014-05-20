@@ -36,9 +36,9 @@
 
 #page_section{
 	float: left;
-	width: 60%;
 	border: 2px solid black;
-	margin: 0px auto;
+	margin: 0px 10px 10px 0px;
+	width: 606px;
 }
 
 #page_section h3{
@@ -47,8 +47,9 @@
 
 #page_aside{
 	float: left;
-	width: 30%;
-	margin: 0px auto;
+	padding: 10px;
+	border: 2px solid black;
+	width: 296px;
 }
 
 #page_aside img{
