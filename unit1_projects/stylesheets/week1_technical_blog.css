@@ -37,6 +37,7 @@
 #page_section{
 	float: left;
 	width: 640 px;
+	border: 2px solid black;
 }
 
 #page_section hgroup{
