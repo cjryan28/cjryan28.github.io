@@ -42,6 +42,7 @@
 	border: 2px solid black;
 	margin: 0px 10px 10px 0px;
 	width: 606px;
+	height: 100%;
 }
 
 #page_section h3{
@@ -59,8 +60,6 @@
 	border: 2px solid black;
 	width: auto;
 	height: auto;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 #page_aside img{
