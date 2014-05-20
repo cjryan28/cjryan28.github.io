@@ -38,9 +38,7 @@
 }
 
 #page_section{
-	float: left;
 	border: 2px solid black;
-	width: 956px;
 }
 
 #page_section h3{
