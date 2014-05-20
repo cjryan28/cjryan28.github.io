@@ -36,7 +36,7 @@
 
 #page_section{
 	float: left;
-	width: 640 px;
+	width: 66%;
 	border: 2px solid black;
 }
 
@@ -46,5 +46,5 @@
 
 #page_aside{
 	float: left;
-	width: 320px;
+	width: 33%;
 }
