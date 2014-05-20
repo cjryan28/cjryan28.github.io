@@ -59,6 +59,8 @@
 	border: 2px solid black;
 	width: auto;
 	height: auto;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #page_aside img{
