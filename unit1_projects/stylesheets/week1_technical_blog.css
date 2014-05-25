@@ -25,7 +25,7 @@
 
 }
 
-#page_nav ul{
+ul{
 	list-style-type: none;
 
 
@@ -62,7 +62,12 @@
 
 #page_aside img{
 	padding: 10px 0px;
+	width: 100%;
 
+}
+#page_aside figcaption{
+
+	text-align: center;
 }
 
 #page_footer{
