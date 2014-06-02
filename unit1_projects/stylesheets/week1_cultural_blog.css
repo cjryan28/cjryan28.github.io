@@ -40,8 +40,8 @@
 	float: left;
 	border: 2px solid black;
 	margin: 0px 10px 10px 0px;
-	width: 606px;
-	height: 620px;
+	width: 80%;
+	height: 100%;
 }
 
 #page_section h3{
@@ -57,12 +57,13 @@
 	float: left;
 	padding: 15px;
 	border: 2px solid black;
-	width: auto;
-	height: auto;
+	width: 10%;
+	height: 100%;
 }
 
 #page_aside img{
 	padding: 10px 0px;
+	width: 100%;	
 	margin-left: auto;
 	margin-right: auto;
 }
