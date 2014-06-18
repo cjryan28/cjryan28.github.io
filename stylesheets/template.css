@@ -1,0 +1,91 @@
+a{
+	font-family: "Cinzel";
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: white;
+	background: black;
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel-Regular'), url(http://themes.googleusercontent.com/static/fonts/cinzel/v2/PPYkMH2Vr9iqUFBaz60XpevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Josefin Sans 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v5/xgzbb53t8j-Mo-vYa23n5qRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+header{
+	font-family: "Josefin Sans 2";
+	text-align: center;
+	font-size: 48px;
+	padding: 50px 0px;
+	width: 30%;
+	color: white;
+	background-color: black;
+	position: fixed;
+	top: 0px;
+	border: 1px solid black;
+}
+nav{
+	border: 1px solid black; 
+	position: fixed;
+	top: 148px;
+	width: 30%;
+	background-color: white;
+	height: 100%
+}
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+nav ul li{
+	margin: 10%;
+}
+section {
+	font-family: "Josefin Sans 2";
+}
+section h1{
+	background-color: white;
+	font-family: "Cinzel";
+	text-align: center;
+	font-size: 24px;
+	padding: 62px 0px;
+	margin-left: 30%;
+}
+section h3{
+	font-size: 16px;
+	margin-left: 2%;
+	margin-top: 2%;
+	text-decoration: underline;
+}
+section p{
+	margin-left: 2%;
+	margin-top: 2%;
+}
+section img{
+	border: solid black 1px;
+	margin: 5% auto;
+	display: block;
+}
+#body{
+	width: 60%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 35%;
+	background-color: white;
+}
+#date{
+	font-family: "Cinzel";
+	font-size: .5em;
+}
+footer{
+	margin-left: 35%;
+	font-family: "Cinzel";
+	font-size: .5em;
+}

@@ -1,0 +1,62 @@
+#wrap{
+	width: "100%";
+	margin: 0 auto;
+}
+a{
+	font-family: "Cinzel";
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: white;
+	background: black;
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel-Regular'), url(http://themes.googleusercontent.com/static/fonts/cinzel/v2/PPYkMH2Vr9iqUFBaz60XpevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Josefin Sans Thin Italic'), local('JosefinSans-ThinItalic'), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v5/s7-P1gqRNRNn-YWdOYnAOUU4uDXlcIT8_0bdRGwoYww.woff) format('woff');
+}
+@font-face {
+  font-family: 'Josefin Sans 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v5/xgzbb53t8j-Mo-vYa23n5qRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quattrocento Sans'), local('QuattrocentoSans'), url(http://themes.googleusercontent.com/static/fonts/quattrocentosans/v6/efd6FGWWGX5Z3ztwLBrG9coBJSyBiVuloIc8IXLz46o.woff) format('woff');
+}
+header{
+	font-family: "Josefin Sans 2";
+	text-align: center;
+	font-size: 3em;
+	margin: 5%;
+}
+nav{
+	border-bottom: 1px solid black; 
+	border-top: 1px solid black;
+	margin-bottom: 5%;
+
+}
+nav ul{
+	list-style-type: none;
+	text-align: center;
+	margin: 2%;
+}
+nav ul li{
+	display: inline;
+	margin: 5%;
+}
+footer{
+	margin: 2%;
+	text-align: center;
+}

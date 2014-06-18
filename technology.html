@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/template.css">
+	<title> Technology Blog </title>
+	<style>
+		section{
+		background-image: url("http://fahmirahman.files.wordpress.com/2011/01/1_1.jpg");
+
+		}
+	</style>
+</head>
+<body>
+	<div id= "wrap">
+		<header> 
+			Technology
+		</header>
+		<nav>
+			<ul class = "main_links">
+				<li> <a href = "index.html"> home </a> </li>
+				<li> <a href="culture.html"> culture blog </a> </li>
+				<li> <a href = "technology.html#week5"> Week 5. Programming with Classes </a> </li>
+				<li> <a href="technology.html#week4"> Week 4. Ruby Built-in Methods: Enumerable#map </a> </li>
+				<li> <a href = "technology.html#week3"> Week 3. JavaScript </a> </li>
+				<li> <a href = "technology.html#week2"> Week 2. CSS: Display Inline and Inline Blocks </a> </li>
+				<li> <a href="Technology.html#week1"> Week 1. Favorite Sites </a> </li>
+			</ul>
+		</nav>
+		<section>
+			<ul>
+				<li id= "week5">
+					<h1> Programming with Classes </h1>
+					<div id= "body">
+						<span id= "date"><i>June 15, 2014</i> </span>
+						<h3> When, why, how </h3>
+						<p> 
+							Classes are the way Ruby does objects. Classes have variables and methods that execute on behalf of the object. Classes are used when a programmer wants to store, manipulate, or return date belonging to some particular object. Objects can be people, shopping carts, maps, or anything that can be defined with variables. For example, if I created a class of people, they could have variables like birthday, social security number, and name. These people could have methods like celebrate birthday or change name. The key to classes is that they use variables to store data that's manipulated with methods and returned as new data to store or overwrite the old stored data.  
+						</p>
+						<h3> Object oriented </h3>
+						<p>
+							Class variables come in different types. The most common relating to a specific class is called an instance variable. Instance variables are unique to a particular class object. Many objects relating to that class can be created, but they each have different instance variables. Instance variables are normally information passed in when a new object is created.
+						</p>
+						<p>
+							chad = Person.new("Chad", 17, "May 15, 1994")
+						</p>
+						<p>
+							Above I created a new object chad of the class Person. The object chad now has three instance variables defining him: his name, age, and birthdate. While this code creates chad the object, first there has to be code that defines the class Person.
+						</p>
+						<p>
+							class Person
+						<br>def initialize(name, age, birthdate)
+						<br>@name = name
+						<br>@age = age
+						<br>@birthdate = birthdate
+						<br>end
+						<br>end
+						</p>
+						<p>
+							What happens now is that class Person is created. Person.new references the initialize method. Notice that the three things defining chad- parameters- match the three parameters in the initialize function. This matches so that the information passed in can be stored as instance variables, the variables with the @ sign. Instance variables are needed, because then these variables can be used throughout the class, with other methods.
+						</p>
+						<p>
+							def getTimeToTwentyFirst
+						<br>puts 21 - @age
+						<br>end	
+						</p>					
+						<p>  
+							The class could include a method like the one above that would return the number of years before a person turns 21. Notice how the @age variable can be used even though the method getTimeToTwentyFirst requires no parameters. So when 
+						</p>
+						<p>
+							chad.getTimeToTwentyFirst
+						</p>
+						<p>
+							is entered into the console, the time until chad turns 21 will be printed on a new line. 
+						</p>
+					</div>
+				</li>
+				<li id = "week4"> 
+					<h1> Ruby Built-in Methods: Enumerable#map </h1>
+					<div id= "body">
+						<span id= "date"><i>June 8, 2014</i> </span>
+						<h3> What's It Used For? </h3>
+						<p> 
+							The map function can be used on arrays and hashes. 
+							Ruby.org explains that the function returns a new array with the results of running block once for every element in enum. It continues saying that if no block is given, an enumerator is returned instead. I find a lot of Ruby.org to be a foreign language to me, so I'll try connect its explanation with some examples.
+						</p>
+						<p>
+							Example 1: [2, 2, 3, 4].map {|i| i * 2 } ==> [4, 4, 6, 8]
+						</p>
+						<p>
+							Here's how I understand what's happening. For each i in the array, its value will be multiplied by 2 and outputted in a different array. However, if the map! function was called, the new values would be outputted in the same array, overwriting the original one.
+						</p>
+						<p>
+							The same basic thing happens in hashes, except the block statement, what's inside curly braces, must be changed to reflect what should be mapped. And, it should be noted that map function outputs an array, even when called on a hash.
+						</p>
+						<p>
+							Example 2: {"a"=> 3, "b"=> 2}.map {|k, v| v * 2} ==> [6, 4]
+						</p>
+						<p>
+							Example 3: {"a"=> 3, "b"=> 2}.map {|k, v| k * 2} ==> ["aa", "bb"]
+						</p>
+						
+						<h3> What's Its Limitations? </h3>
+						<p>  
+							The map function returns an array, so the map! function can't be used on hashes. This means that the map function can't directly affect hashes on its own. It must be used in conjunction with other functions to alter the contents of the hash. 
+						</p>
+					</div>
+				</li>
+				<li id = "week3"> 
+					<h1>  JavaScript </h1>
+					<div id= "body">
+						<span id= "date"> <i>June 1, 2014 </i></span>
+						<h3> What's It Used For? </h3>
+						<p> 
+							An about.com article described it best in a general way. The article explains that a good website uses three programming languages. It uses HTML for the content, CSS for the appearance, and JavaScript for basic interations. The article adds that JavaScript changes websites from static to dynamic. With HTML, users would need to submit forms that would be sent to the server, which would reload the webpage. However, with JavaScript, users are able to interact with the website without contacting the server. This makes JavaScript dynamic. Even better, JavaScript compiles on the user's side, so it doesn't take up unecessary bandwith. This feature of the programming language makes it predominantly client-side language.
+						</p>
+						<h3> Why's It Popular? </h3>
+						<p>  
+							JavaScript has multiple functionalities ranging from spell check while a person is typing on a webpage to animations visible on the webpage. This article explains the 50 best uses of JavaScript on the web, http://www.1stwebdesigner.com/freebies/examples-html5-javascript-uses. After some research, I've gathered a list of advantages to JavaScript. The language may be popular because of these features: client side execution, easy syntax language similar to Java, fast to process on the user's end, and there is extended functionality to webpages with third party add ons.
+						</p>
+						<h3> What's Its Limitations? </h3>
+						<p>  
+							JavaScript is a limited language. It's not to be used for large projects that could stress a user's computer. The language introduces security issues because the language is executed on the client's side, granting potential access to a user's system. Finally, some JavaScript renderings vary, which can cause major headaches for implementation. 
+						</p>
+					</div>
+				</li> 
+				<li id = "week2"> 
+					<h1> CSS: Display Inline and Inline Blocks </h1>
+					<div id= "body">
+						<span id= "date"><i> May 25, 2014 </i> </span>
+						<h3> Display Inline vs. Inline Blocks </h3>
+						<p> 
+							HTML elements are displayed in varying ways. The variations are block, inline, or none. The most common element displayed as a block is a paragraph. As a block element, paragraphs start their formmation on a new line than the normal HTML flow, and they take the full width available to them. The most common inline element is the anchor element, the a used for links. As an inline element, these items will appear next to whatever has been coded before it.
+							To demonstrate, here are two paragraph and two anchors.
+						</p>
+						<br></br>
+						<p>  
+							Paragraph 1 
+						</p>
+						<p>  
+							Paragraph 2 
+						</p>
+						<br></br>
+						<a href="#">Anchor 1</a>
+						<a href="#">Anchor 2</a>
+						<br></br>
+						<p>
+							CSS lets us change the default display. With CSS, we can set anchors to display as blocks, which will move one link beneath the other, and paragraphs to display inline, which will concatenate the paragraphs.
+						</p>
+						<h3> Inline Block </h3>
+						<p>
+							Moving forward, there's a display property called inline-block. Confusingly titled, it's easiest for me to think of it seperately than display inline or block. I like to think of inline-block as an alternative to float. Display inline-block treats each paragraph as a block, but will display them inline. There are a few things to know about this though. By default paragraphs are displayed at eachother's baseline as shown in Image 1.
+						</p>
+						<p>
+							Fortunately, using the vertical-align property allows the user to change the vertical alignment. For example you could change the alignment to top, which would mimic the way block elements look using the float property.
+						</p>	
+						<p>
+							It's interesting to note that images are also inline elements. Only because the images to the right are formatted to take up 100% of the width, do the elements get forced into a stacked position.
+						</p>
+						<h3> Sources </h3>
+						<p>
+							<ul>
+								<li><a href= "http://webdesignfromscratch.com/html-css/css-block-and-inline/"> http://webdesignfromscratch.com/html-css/css-block-and-inline/ </a> </li>
+								<li><a href= "http://www.impressivewebs.com/inline-block/"> http://www.impressivewebs.com/inline-block/</a></li>
+								<li><a href= "http://www.brunildo.org/test/inline-block.html">http://www.brunildo.org/test/inline-block.html</a></li>
+								<li><a href= "http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/"> http://designshack.net/articles/css/whats-the-deal-with-display-inline-block/ </a></li>
+							</ul>
+						</p>	
+					</div>
+				</li> 
+				<li id = "week1"> 
+					<h1> Favorite Sites </h1>
+					<div id= "body">
+						<span id= "date"><i> May 18, 2014 </i> </span>
+						<h3> Instagram </h3>
+						<p> 
+							Instagram is my favorite website. To be candid, I visit the website relatively infrequently compared to the time I spend on the mobile application. The website and the mobile application share common features, though. The website's purpose is to showcase users photography in a way that flatters the user and keeps the user's followers updated. Instagram accomplishes its purpose in an outrageously simple format, which is why I am a big fan. It's minimalist structure appeals to me. I would argue it changes its users' behaviors too. It seems to me that most of the people I follow on Instagram try to make meaningful, serious posts on the social media. Facebook appears a social media dump when compared to Instagram.<br><br>Instagram's homepage is a simple scroll, and it's navigation bar includes few options. The photos are displayed large enough that they consume the entire window, ensuring that one photo takes the user's complete attention. Instagram's users can view their photos in an electronic collage at the top of their homepage. Its users can see their photos displayed on top in collage, while the pictures are also displayed statically beneath. <br><br>The website is practical, artistic, minimalist, and efficient. It's brilliant.
+						</p>
+						<h3> YouTube </h3>
+						<p> 
+							YouTube is my second favorite website. On YouTube, users can learn, explore, get inspired, and laugh. The website understands its multifunctionality and organizes itself appropriately. On the homepage, YouTube users see different sections like Popular Worldwide, Recommended for You, Music, and Comedy. If the homepage doesn't seem customized enough, a user can search using a search tool in the navigation or look at more general YouTube videos. While YouTube is social in its likes and comments, the general user doesn't need to be social to enjoy the website. <br><br> It's safe to say that without YouTube, the learning curve for making this website would've been very steep. Thanks, YouTube!
+						</p>
+						<h3> Etsy </h3>
+						<p> 
+							Etsy is a website I have recently come to love. The website attempts to connect interested buyers with small scale producers marketing products in a social way. The idea is fantastic. By taking advantage of the internet, many small producers now have the real estate and reach they need to be successful. While a local scented beard oil producer lives a financially dangerous lifestyle at best, the same producer on Etsy could find demand all over the world. Continuing, the platform gives people the freedom to provide value to others in any way they can. And while the mug makers on Etsy seem a bit saturated, I normally can't wait to explore anything else. Since its prodcuts range from t-shirts to record players, Etsy is designed chaotically. It's tough to find something that someone has never found or liked before. I think it still has potential. Maybe it should have a weekly showcase of undiscovered talent! 
+						</p>
+					</div>
+				</li> 
+			</ul>
+		</section>
+		<footer>
+			<p> &copy caseyryan2014 </p>
+		</footer>
+	</div>
+
+</body>
