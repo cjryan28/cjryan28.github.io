@@ -20,6 +20,7 @@
 			<ul class = "main_links">
 				<li> <a href = "index.html"> home </a> </li>
 				<li> <a href="culture.html"> culture blog </a> </li>
+				<li> <a href = "technology.html#week6"> Week 6. Class Methods </a> </li>
 				<li> <a href = "technology.html#week5"> Week 5. Programming with Classes </a> </li>
 				<li> <a href="technology.html#week4"> Week 4. Ruby Built-in Methods: Enumerable#map </a> </li>
 				<li> <a href = "technology.html#week3"> Week 3. JavaScript </a> </li>
@@ -29,6 +30,51 @@
 		</nav>
 		<section>
 			<ul>
+				<li id= "week6">
+					<h1> Class Methods </h1>
+					<div id= "body">
+						<span id= "date"><i>June 22, 2014</i> </span>
+						<h3> What and How </h3>
+						<p> 
+							It's easiest to define a class method by comparing it to its closest, most often confused with, cousin, instance methods. At a high level, class methods are methods called on a class while instance methods are called on an instance of a class. Instance methods are what I'm most familiar with as of now. Instance methods look like this  
+						</p>
+						<p>
+							class SomeClass
+
+							def someMethod
+							end
+
+							def someMethod2
+							end
+
+							end
+						</p>
+						<p>
+							In the example above, someMethod and someMethod2 are instance methods. Typing SomeClass.someMethod would not work. First there must be a SomeClass.new instance of SomeClass created, and then the methods can be called. 
+						</p>
+						<p>
+							But with class methods such is not the case. Class methods look like this
+						</p>
+						<p>
+							class SomeClass
+
+							def self.someMethod
+							end
+
+							def self.someMethod2
+							end
+
+							end
+						</p>
+						<p>
+							In this situation SomeClass.someMethod is the proper way to evoke the someMethod method.
+						</p>
+						<h3> When </h3>
+						<p>
+							The most obvious difference between class and instance methods are their scope. Instance methods apply to a certain instantiation of a class. They are most likely used on individual objects. They are good for doing different things to different objects depending on what information the object has been given or told to do. On the other hand, class methods are used if one doesn't want to create an instantiation of an object to call methods. I may be wrong, but I think that Ruby built in methods for the array class or enumerable class are class methods. These methods can be called on objects that need no instantiation. 
+						</p>
+					</div>
+				</li>
 				<li id= "week5">
 					<h1> Programming with Classes </h1>
 					<div id= "body">
