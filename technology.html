@@ -20,6 +20,7 @@
 			<ul class = "main_links">
 				<li> <a href = "index.html"> home </a> </li>
 				<li> <a href="culture.html"> culture blog </a> </li>
+				<li> <a href = "technology.html#week7"> Week 7. Injection Attacks </a> </li>
 				<li> <a href = "technology.html#week6"> Week 6. Class Methods </a> </li>
 				<li> <a href = "technology.html#week5"> Week 5. Programming with Classes </a> </li>
 				<li> <a href="technology.html#week4"> Week 4. Ruby Built-in Methods: Enumerable#map </a> </li>
@@ -30,6 +31,44 @@
 		</nav>
 		<section>
 			<ul>
+				<li id= "week7">
+					<h1> Injection Attacks </h1>
+					<div id= "body">
+						<span id= "date"><i>June 22, 2014</i> </span>
+						<h3> What </h3>
+						<p> 
+							The goal of injection attacks are to gain access to a database using SQL commands. This works by users inputting text that is passed into an SQL query. For example, when a user enters his username or password information into a text field, the website may be programmed to call information from an SQL database where the information inputted equals the information in the table. Here users could potentially enter anything they want into the text fields including text that would return information that is supposed to be private to the user or text that could alter the database. The most common example of text entered into a text field that returns information that is supposed to be private is ' Or 1=1 --. When this is entered into a text field, it automatically returns everything selected because the 1=1 evaluates true for each instance of the data and the -- comments out whichever code comes after the input in the program. 
+						</p>
+						<h3> Ways to Limit Injection Attacks </h3>
+						<p>
+							It is not difficult to limit injection attacks. The most effective fixes aren't difficult to implement.
+						</p>
+						<ol>
+							<li>
+								<p>
+									1. Input restrictions: When users attack with SQL injections, most of the times they need code that is longer than any username or password in the database. This is important, because if the user input's text length can be limited to the maximum amount of characters in the database, then any form of injection attack longer than that character length will not be able to be inputted. 
+								</p>
+							</li>
+							<li>
+								<p>
+									2. Sanitize user input: Some programmers implement methods that check a users input for blacklisted keywords crucial to SQL queries. These blacklists can include words like WHERE, UNION, or GROUPBY or they can include symbols like -- or ;. Sanitization can alert programmers to attacks which programmers can then prevent or stop. 
+								</p>
+							</li>
+							<li>
+								<p>
+									3. Parameters: Parameters are represented in SQL by the @ sign. Here's an example of code that will prevent SQL injection attacks.
+								</p>
+								<p>
+									txtUserId = getRequestString("UserId");
+								</br>	
+									txtSQL = "SELECT * FROM Users WHERE UserId = @0";
+								</br>	
+									db.Execute(txtSQL,txtUserId);
+								</p>
+							</li>
+						</ol> 
+					</div>
+				</li>
 				<li id= "week6">
 					<h1> Class Methods </h1>
 					<div id= "body">
