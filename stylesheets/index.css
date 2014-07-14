@@ -1,7 +1,9 @@
+
 #wrap{
 	width: 100%;
 	margin: 0 auto;
 }
+
 a{
 	font-family: "Cinzel";
 	text-decoration: none;
@@ -26,38 +28,65 @@ a:hover{
 header{
 	font-family: "Josefin Sans 2";
 	text-align: center;
-	font-size: 48px;
-	padding: 50px 0px;
+	font-size: 3em;
 	width: 100%;
-	color: white;
 	background-color: black;
 	position: fixed;
-	top: 0px;
+	top: 0;
+	min-height: 15%;
+}
+header h1{
+	margin: 2%;
+	color: white;
 }
 nav {
 	border-bottom: 1px solid black; 
 	border-top: 1px solid black;
 	position: fixed;
-	top: 148px;
+	top: 15%;
 	width: 100%;
 	background-color: white;
+	font-size: 1em;
+	overflow: scroll;
 }
 nav ul{
 	list-style-type: none;
 	text-align: center;
-	margin: 15px;
+	margin: 1%
+
 }
 nav ul li{
 	display: inline;
-	margin: 5%;
+	margin: 0% 2%;
+
 }
 section {
-	margin-top: 220px;
+	margin-top: 25%;
 	font-family: "Josefin Sans 2";
 	text-align: center;
 }
+section #blog{
+	font-family: "Josefin Sans 2";
+	font-size: 2em;
+	padding-bottom: 10%;
+	
+}
 section img, iframe{
 	border: 1px solid black;
+	width: 37.5%;
+	height: 30%;
+}
+#tech{
+	float: left;
+	width: 50%;
+	height: 100%;
+	clear: left;
+}
+#cult{
+	float: right;
+	width: 50%;
+	height: 100%;
+	clear: right;
 }
 #caption{
 	margin: 2%;
@@ -67,9 +96,15 @@ section img, iframe{
 	font-family: "Cinzel";
 	font-size: .5em
 }
+#week{
+	text-align: center;
+	font-size: 4em;
+	margin: 5%
+}
 footer{
 	margin: 2%;
 	text-align: center;
 	font-family: "Cinzel";
-	font-size: .5em
+	font-size: .5em;
+	clear: both;
 }
